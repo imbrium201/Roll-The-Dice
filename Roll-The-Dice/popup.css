@@ -1,0 +1,78 @@
+#popup-container {
+  font-family: sans-serif;
+  width: 250px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-bottom: 2px;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.9em;
+  padding: 3px;
+}
+
+/* Dice buttons */
+.dice-buttons-row {
+  margin-top: 10px;
+}
+.dice-buttons-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.dice-face-button {
+  flex: 0 0 auto;
+  font-size: 0.9em;
+  padding: 3px 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+#results-container {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* Buttons at bottom */
+.button-row {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.button-row button {
+  flex: 1;
+  font-size: 0.9em;
+  padding: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+}

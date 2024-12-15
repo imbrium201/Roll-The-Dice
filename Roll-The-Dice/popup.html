@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dice Roller</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="popup-container">
+    <h1>Dice Roller</h1>
+
+    <!-- Row for number of dice and faces -->
+    <div class="input-row">
+      <div class="input-group">
+        <label for="dice-count">Number of Dice:</label>
+        <input type="number" id="dice-count" min="1" max="999" value="1" />
+      </div>
+      <div class="input-group">
+        <label for="dice-faces">Number of Faces:</label>
+        <input type="number" id="dice-faces" min="2" max="999" value="6" />
+      </div>
+    </div>
+
+    <!-- Dice face buttons in two rows -->
+    <div class="dice-buttons-row">
+      <div class="dice-buttons-line">
+        <button class="dice-face-button" data-faces="4">D4</button>
+        <button class="dice-face-button" data-faces="6">D6</button>
+        <button class="dice-face-button" data-faces="8">D8</button>
+      </div>
+      <div class="dice-buttons-line">
+        <button class="dice-face-button" data-faces="10">D10</button>
+        <button class="dice-face-button" data-faces="12">D12</button>
+        <button class="dice-face-button" data-faces="20">D20</button>
+        <button class="dice-face-button" data-faces="100">D100</button>
+      </div>
+    </div>
+
+    <div id="results-container"></div>
+
+    <!-- Buttons at the bottom -->
+    <div class="button-row">
+      <button id="roll-button">Roll Dice</button>
+      <button id="copy-button" disabled>Copy Results</button>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
